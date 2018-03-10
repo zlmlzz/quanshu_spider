@@ -51,8 +51,6 @@ class Search(object):
         if start_url is not None:
             self.books_name.append(start_url['title'])
             self.books_url.append(response.url)
-            if self.books_url is not None and len(books_url) != 0:
-                return self.allbooks
         else:
             print('没有你想要的书')
             return
